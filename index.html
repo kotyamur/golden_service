@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- header -->
     <header>
-        <nav>
-            <a href="./">Golden</a>
-            <ul>
-                <li>
-                    <a href="./">HOME</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-                <li>
-                    <a href="./">Portfolio</a>
-                </li>
-                <li>
-                    <a href="./">About</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container"> 
+            <nav class="main-nav">
+                <a href="./" class="header-logo"><img src="./images/Logo.svg" width="162"></a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="./">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="./">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="./">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- main -->
     <main>
-        <h1>Golden</h1>
-        <section>
-            <h2 id="services">Services</h2>
+        <h1 class="visually-hidden">Golden</h1>
+        <section class="main-section">
+            <div class="container"> 
+                <h2 id="services">Services</h2>
             <ul>
                 <li>
                     <h3>E-Commerce</h3>
@@ -48,34 +59,34 @@
                     <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
             </ul>
-
+            </div>
         </section>
-        <section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
             <h2 id="contact">Contact us</h2>
             <form>
                 <label>
-                    Your name*
+                    <!-- Your name* -->
                     <input type="text" name="firstName" placeholder="Your name*" >
                 </label>
                 <label>
-                    Your E-mail*
+                    <!-- Your E-mail* -->
                     <input type="email" name="email" placeholder="Your E-mail*" >
                 </label>
                 <label>
-                    Subject*
+                    <!-- Subject* -->
                     <textarea name="Subject" rows="1" placeholder="Subject*"></textarea>
                 </label>
                 <label>
-                    Your messange
+                    <!-- Your messange -->
                     <textarea name="feedback" rows="10" placeholder="Your messange"></textarea>
                 </label>
                 <button type="submit">Send Message</button>
             </form>
-        </section>
-        
-    </main>
-    <!-- footer -->
-    <footer></footer>
+        </div>
+    </footer>
     
 </body>
 </html>
