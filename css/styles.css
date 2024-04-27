@@ -13,6 +13,8 @@
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--main-text-color);
 }
 
 .visually-hidden {
@@ -34,6 +36,15 @@ body {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.87;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 header {
@@ -58,10 +69,31 @@ header {
     color: var(--accent-color);
 }
 
-.main-section {
+.services-section {
     padding-top: 109px;
     padding-bottom: 105px;
+}
 
+.services-title {
+    margin-bottom: 88px;
+    color: var(--heading-bg);
+}
+
+.services-list {
+    display: flex;
+    gap: 56px;
+}
+
+.services-list > li {
+    width: 274px;
+    text-align: center;
+}
+
+.services-list h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 4.17;
+    color: var(--heading-bg);
 }
 
 footer {
@@ -71,4 +103,62 @@ footer {
     padding-bottom: 115px;
 
     background-color: var(--footer-bg);
+}
+
+.footer-title {
+    margin-bottom: 114px;
+    color: var(--secondary-text-color);
+}
+
+.footer-form {
+    text-align: center;
+}
+
+.label-wrapper {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    /* width: calc((100% - 28px) /2 ); */
+}
+
+.form-textarea,
+.input-wrapper {
+    width: calc((100% - 28px) /2 );
+}
+
+/* .input-wrapper > label,  */
+.form-textarea > textarea,
+.input-wrapper input {
+    width: 100%;
+    padding: 14px 22px;
+    border-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--placeholder-color);
+}
+
+.form-btn {
+    padding: 22px 32px;
+    min-width: 242px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border: transparent;
+    cursor: pointer;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
 }

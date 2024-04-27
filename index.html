@@ -42,10 +42,10 @@
     <!-- main -->
     <main>
         <h1 class="visually-hidden">Golden</h1>
-        <section class="main-section">
+        <section class="services-section">
             <div class="container"> 
-                <h2 id="services">Services</h2>
-            <ul>
+                <h2 id="services" class="title services-title">Services</h2>
+            <ul class="services-list">
                 <li>
                     <h3>E-Commerce</h3>
                     <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
@@ -65,25 +65,29 @@
     <!-- footer -->
     <footer>
         <div class="container">
-            <h2 id="contact">Contact us</h2>
-            <form>
-                <label>
-                    <!-- Your name* -->
-                    <input type="text" name="firstName" placeholder="Your name*" >
-                </label>
-                <label>
-                    <!-- Your E-mail* -->
-                    <input type="email" name="email" placeholder="Your E-mail*" >
-                </label>
-                <label>
-                    <!-- Subject* -->
-                    <textarea name="Subject" rows="1" placeholder="Subject*"></textarea>
-                </label>
-                <label>
-                    <!-- Your messange -->
-                    <textarea name="feedback" rows="10" placeholder="Your messange"></textarea>
-                </label>
-                <button type="submit">Send Message</button>
+            <h2 id="contact" class="title footer-title">Contact us</h2>
+            <form class="footer-form">
+                <div class="label-wrapper">
+                    <div class="input-wrapper">
+                        <label>
+                            <!-- Your name* -->
+                            <input type="text" name="firstName" placeholder="Your name*" >
+                        </label>
+                        <label>
+                            <!-- Your E-mail* -->
+                            <input type="email" name="email" placeholder="Your E-mail*" >
+                        </label>
+                        <label>
+                            <!-- Subject* -->
+                            <input type="text" name="Subject" placeholder="Subject*" >
+                        </label>
+                    </div>
+                    <label class="form-textarea">
+                        <!-- Your messange -->
+                        <textarea name="feedback" rows="10" placeholder="Your messange*"></textarea>
+                    </label>
+                </div>
+                <button type="submit" class="form-btn">Send Message</button>
             </form>
         </div>
     </footer>
